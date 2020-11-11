@@ -1,0 +1,15 @@
+version: "3"
+services:
+  demo-pg-db:
+    container_name: "PostgresSQL"
+    image: postgres:latest
+    mem_limit: 1536MB
+    mem_reservation: 1G
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_HOST_AUTH_METHOD: ${PG_HOST_METHOD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - ${PG_VOLUME_PATH:?err}:/var/lib/postgresql/data
