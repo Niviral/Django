@@ -81,9 +81,9 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db1',
-        'USER': 'mbienias',
-        'PASSWORD': 'qwerQWER1234',
+        'NAME': 'django',
+        'USER': 'django',
+        'PASSWORD': 'testdocker',
         'HOST':'127.0.0.1',
         'PORT':'5432'
     }
