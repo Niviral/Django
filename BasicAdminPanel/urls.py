@@ -20,4 +20,5 @@ urlpatterns = [
     re_path('^admin/', admin.site.urls),
     re_path(r'^', include('home.urls')),
     re_path('^account/',include('django.contrib.auth.urls')),
+    path('api/',include('api.urls')),
 ]
